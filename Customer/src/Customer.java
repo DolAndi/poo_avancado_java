@@ -48,6 +48,16 @@ public class Customer {
     public Address getEnderecoResidencial() {
         return enderecoResidencial;
     }
-
-    
+}
+class PessoaFisica extends Customer {
+    public PessoaFisica(String agencia, String conta, String nome){
+        super(agencia, conta, nome);
+    }
+    private String cpf;
+    public String getCpf() {
+        return cpf;
+    }
+    public void setCpf(String cpf) {
+        this.cpf = cpf;
+    }
 }
